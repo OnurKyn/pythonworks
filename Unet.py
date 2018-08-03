@@ -25,11 +25,9 @@ class Unet:
     def __init__(self, min_filter = 32, max_filter = 256,classnumber=2, name = "g",padding = 'SAME'):
         """
         Initialize a UNet generator.
-        :param layer_sizes: A list with the filter sizes for each MultiLayer e.g. [64, 64, 128, 128]
-        :param layer_padding: A list with the padding type for each layer e.g. ["SAME", "SAME", "SAME", "SAME"]
-        :param batch_size: An integer indicating the batch size
-        :param num_channels: An integer indicating the number of input channels
-        :param inner_layers: An integer indicating the number of inner layers per MultiLayer
+        :param min_filter: Number of  conv filters ( beginning and ending of U s)
+        :param max_filter: Number of filters (Deep of U shape, middle layer)
+        :param classnumber: Number of classes
         """
         self.min_filter = min_filter
         self.max_filter = max_filter
