@@ -11,16 +11,14 @@ Created on Thu Jul 26 10:20:18 2018
 @author: onur
 """
 import tensorflow as tf
-import cv2
 import sys
 import numpy as np
 import tflearn
 import glob
 from tflearn.layers.normalization import batch_normalization as bn
 from tflearn.layers.conv import conv_2d, max_pool_2d, upsample_2d
-from tflearn.layers.merge_ops import merge
-from tflearn.layers.core import fully_connected as fc
-from mylib.mycv import goster,Deconv
+
+
 class Unet:
     def __init__(self, min_filter = 32, max_filter = 256,classnumber=2, name = "g",padding = 'SAME'):
         """
