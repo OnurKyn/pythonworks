@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+U-Net: Convolutional Networks for Biomedical Image Segmentation  
+Olaf Ronneberger, Philipp Fischer, Thomas Brox
+Medical Image Computing and Computer-Assisted Intervention (MICCAI), Springer, 
+LNCS, Vol.9351: 234--241, 2015, available at arXiv:1505.04597 [cs.CV] 
+
+
 Created on Thu Jul 26 10:20:18 2018
 @author: onur
 """
